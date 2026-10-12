@@ -2,7 +2,7 @@
 
 A small diary of life with Lux & Leo, with seasonal photograph collections and favourite finds.
 
-**Live website:** [velveteentails.onrender.com](https://velveteentails.onrender.com)
+**Live website:** [velveteentails.com](https://velveteentails.com)
 
 ## Build and check
 
@@ -14,18 +14,20 @@ npm run verify
 
 The build creates the page, sitemap and robots file in `dist/`. The check validates photo assets, page anchors, diary content, metadata and JavaScript syntax.
 
-## Hosting on Render
+## Hosting on Vercel
 
-The live site is a Render **Static Site** connected to branch `main`:
+The production site is Vercel project `velveteentails` (`prj_yqDM9SpF06sgLw3eX5JTRowu0fW5`) in team `patelks2394` (`team_ZY9phrDZ5PvukhUf5QSSvcyr`), connected to this repository's `main` branch.
 
+- Framework preset: Other
 - Build command: `npm run verify`
-- Publish directory: `dist`
-- Automatic deployment: enabled
-- Optional environment variable: `SKIP_INSTALL_DEPS=true`
+- Output directory: `dist`
+- Environment variable: `SITE_URL=https://velveteentails.com`
+- Primary domain: https://velveteentails.com
+- https://www.velveteentails.com redirects to the primary domain.
 
-No web server, paid compute instance or database is required. Only the contents of `dist/` are published.
+Vercel builds repository updates. Always inspect deployment status and source commit after publishing; a push alone does not prove a successful release. Preview deployments are marked noindex. The domain was registered through Vercel and HTTPS was verified on October 12, 2026. Keep canonical, sharing, sitemap and robots URLs consistent with SITE_URL.
 
-The build uses Render's `RENDER_EXTERNAL_URL` for page and sitemap URLs. After connecting and verifying a custom domain, set `SITE_URL` to its HTTPS origin and redeploy. Until then, leave `SITE_URL` unset. Local builds fall back to the verified primary site address in `site-origin.txt`. Pull request previews are marked noindex.
+The former Render site and ChatGPT Sites copy remain migration fallbacks. Do not independently edit their content or delete them without user approval. No paid hosting upgrade is authorized.
 
 ## Weekly updates
 
@@ -35,7 +37,7 @@ Add prepared photographs and thumbnails in `dist/assets/`, then add their metada
 
 The diary, gallery and affiliate links can be edited without changing the design. Keep accurate photo descriptions and the affiliate disclosure.
 
-Run `npm run verify`, review the change, and commit to `main`. Render rebuilds and publishes successful updates automatically when auto-deploy is enabled.
+Run `npm run verify`, review the change, and commit to `main`. Check the matching Vercel deployment and verify the public site before reporting publication.
 
 ## Source layout
 
