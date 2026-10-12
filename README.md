@@ -2,6 +2,8 @@
 
 A small diary of life with Lux & Leo, with seasonal photograph collections and favourite finds.
 
+**Live website:** [velveteentails.onrender.com](https://velveteentails.onrender.com)
+
 ## Build and check
 
 Requires Node.js 22 or newer. There are no third-party package dependencies.
@@ -14,7 +16,7 @@ The build creates the page, sitemap and robots file in `dist/`. The check valida
 
 ## Hosting on Render
 
-Create a **Static Site** from this repository, using branch `main`:
+The live site is a Render **Static Site** connected to branch `main`:
 
 - Build command: `npm run verify`
 - Publish directory: `dist`
@@ -23,7 +25,7 @@ Create a **Static Site** from this repository, using branch `main`:
 
 No web server, paid compute instance or database is required. Only the contents of `dist/` are published.
 
-The build uses Render's `RENDER_EXTERNAL_URL` for page and sitemap URLs. After connecting and verifying a custom domain, set `SITE_URL` to its HTTPS origin and redeploy. Until then, leave `SITE_URL` unset. Local builds fall back to the existing site address in `site-origin.txt`. Pull request previews are marked noindex.
+The build uses Render's `RENDER_EXTERNAL_URL` for page and sitemap URLs. After connecting and verifying a custom domain, set `SITE_URL` to its HTTPS origin and redeploy. Until then, leave `SITE_URL` unset. Local builds fall back to the verified primary site address in `site-origin.txt`. Pull request previews are marked noindex.
 
 ## Weekly updates
 
