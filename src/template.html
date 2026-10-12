@@ -33,9 +33,10 @@
       <a class="wordmark" href="#top" aria-label="Velveteentails home">velveteentails</a>
       <a class="header-instagram" href="{{INSTAGRAM}}" target="_blank" rel="noopener noreferrer" aria-label="Visit Velveteentails on Instagram (opens in a new tab)">{{INSTAGRAM_ICON}}</a>
       <nav aria-label="Main navigation">
-        <a href="#diary">The diary</a>
         <a href="#gallery">Photo gallery</a>
         <a href="#links">Links & favourites</a>
+        <a href="#diary">The diary</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -82,6 +83,21 @@
       </div>
     </section>
 
+    <section id="links" class="links-section wrap" aria-labelledby="links-heading">
+      <a class="quiet-photo" href="{{FEATURED_REEL}}" target="_blank" rel="noopener noreferrer" aria-label="Watch a quiet window moment on Velveteentails Instagram (opens in a new tab)">
+        <img src="assets/october-watch.webp" alt="A quiet moment watching the trees from the window." width="941" height="1672" loading="lazy">
+        <div class="quiet-photo-copy"><span class="eyebrow">A LITTLE OF OUR EVERYDAY</span><p>Quiet hours.</p><span class="quiet-link">Watch the reel on Instagram <span aria-hidden="true">↗</span></span></div>
+      </a>
+      <div class="links-content">
+        <p class="eyebrow">GOOD THINGS, ALL IN ONE PLACE</p>
+        <h2 id="links-heading">Favourites <em>& little finds.</em></h2>
+        <p class="links-description">The useful things, the much-loved things, and a little more of our everyday.</p>
+        <div class="link-list">{{AFFILIATE_LINKS}}</div>
+        <a class="instagram-link" href="{{INSTAGRAM}}" target="_blank" rel="noopener noreferrer">{{INSTAGRAM_ICON}}<span>Find us on Instagram</span><span aria-hidden="true">↗</span></a>
+        <p class="affiliate-disclosure">{{AFFILIATE_DISCLOSURE}}</p>
+      </div>
+    </section>
+
     <section id="diary" class="diary-section" aria-labelledby="diary-heading" data-background-photo="{{DIARY_PHOTO_ID}}">
       <img class="diary-background" src="{{DIARY_PHOTO_SRC}}" alt="" width="{{DIARY_PHOTO_WIDTH}}" height="{{DIARY_PHOTO_HEIGHT}}" style="object-position:{{DIARY_PHOTO_POSITION}}" loading="lazy">
       <div class="diary-layout wrap">
@@ -110,20 +126,6 @@
       <div class="cast-person"><h3>Leo</h3><p>Birdwatcher. Acrobat.<br>3 a.m. cuddler.</p></div>
     </section>
 
-    <section id="links" class="links-section wrap" aria-labelledby="links-heading">
-      <a class="quiet-photo" href="{{FEATURED_REEL}}" target="_blank" rel="noopener noreferrer" aria-label="Watch a quiet window moment on Velveteentails Instagram (opens in a new tab)">
-        <img src="assets/october-watch.webp" alt="A quiet moment watching the trees from the window." width="941" height="1672" loading="lazy">
-        <div class="quiet-photo-copy"><span class="eyebrow">A LITTLE OF OUR EVERYDAY</span><p>Quiet hours.</p><span class="quiet-link">Watch the reel on Instagram <span aria-hidden="true">↗</span></span></div>
-      </a>
-      <div class="links-content">
-        <p class="eyebrow">GOOD THINGS, ALL IN ONE PLACE</p>
-        <h2 id="links-heading">Favourites <em>& little finds.</em></h2>
-        <p class="links-description">The useful things, the much-loved things, and a little more of our everyday.</p>
-        <div class="link-list">{{AFFILIATE_LINKS}}</div>
-        <a class="instagram-link" href="{{INSTAGRAM}}" target="_blank" rel="noopener noreferrer">{{INSTAGRAM_ICON}}<span>Find us on Instagram</span><span aria-hidden="true">↗</span></a>
-        <p class="affiliate-disclosure">{{AFFILIATE_DISCLOSURE}}</p>
-      </div>
-    </section>
     <section class="memory-strip" aria-labelledby="memory-strip-heading">
       <div class="memory-strip-heading wrap"><h2 id="memory-strip-heading">A life in little moments.</h2><div class="memory-strip-actions"><button class="text-button" data-open-collection="all">See all photos <span aria-hidden="true">↗</span></button><button id="memory-strip-toggle" class="strip-toggle" aria-label="Pause scrolling photos" aria-pressed="false">Pause <span aria-hidden="true">Ⅱ</span></button></div></div>
       <div class="memory-strip-viewport" tabindex="0" role="region" aria-label="Photographs from the autumn, summer and kitten collections.">
@@ -134,6 +136,17 @@
   <footer class="site-footer">
     <div class="footer-pattern" aria-hidden="true"></div>
     <div class="footer-inner wrap">
+      <section id="contact" class="footer-contact" aria-labelledby="contact-heading">
+        <div class="contact-intro">
+          <p class="eyebrow">SAY HELLO</p>
+          <h2 id="contact-heading">A little connection.</h2>
+          <p>We're open to collaborations. For brand partnerships or a friendly hello, get in touch.</p>
+        </div>
+        <div class="contact-details">
+          <div><p class="eyebrow">EMAIL & COLLABORATIONS</p><a class="contact-email" href="mailto:luxe.leo.ragdolls@gmail.com">luxe.leo.ragdolls@gmail.com</a></div>
+          <div><p class="eyebrow">FIND US ON INSTAGRAM</p><a class="contact-instagram" href="{{INSTAGRAM}}" target="_blank" rel="noopener noreferrer">{{INSTAGRAM_ICON}}<span>Velveteen Tails <small>@velveteentails</small></span><span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
       <p class="footer-thought">For the people whose pets <em>are their people.</em></p>
       <div class="footer-bottom"><a class="footer-wordmark" href="#top">velveteentails</a><p>With love, from Lux & Leo.</p><a class="back-top" href="#top">Back to the top <span aria-hidden="true">↑</span></a></div>
     </div>

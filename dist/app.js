@@ -222,6 +222,6 @@
         });
       });
     }, {rootMargin: '-15% 0px -55% 0px', threshold: 0});
-    document.querySelectorAll('#diary, #gallery, #links').forEach(section => observer.observe(section));
+    document.querySelectorAll('#diary, #gallery, #links, #contact').forEach(section => observer.observe(section));
   }
 })();
