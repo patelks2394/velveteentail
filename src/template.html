@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf8f4">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="robots" content="{{ROBOTS}}">
+  <link rel="canonical" href="{{CANONICAL}}">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Velveteentails">
+  <meta property="og:url" content="{{CANONICAL}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:image:alt" content="{{OG_IMAGE_ALT}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TITLE}}">
+  <meta name="twitter:description" content="{{DESCRIPTION}}">
+  <meta name="twitter:image" content="{{OG_IMAGE}}">
+  <meta name="twitter:image:alt" content="{{OG_IMAGE_ALT}}">
+  <script type="application/ld+json">{{STRUCTURED_DATA}}</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/im-fell-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="wordmark" href="#top" aria-label="Velveteentails home">velveteentails</a>
+      <a class="header-instagram" href="{{INSTAGRAM}}" target="_blank" rel="noopener noreferrer" aria-label="Visit Velveteentails on Instagram (opens in a new tab)">{{INSTAGRAM_ICON}}</a>
+      <nav aria-label="Main navigation">
+        <a href="#diary">The diary</a>
+        <a href="#gallery">Photo gallery</a>
+        <a href="#links">Links & favourites</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-media">
+        <img src="{{HERO_SRC}}" alt="{{HERO_ALT}}" width="{{HERO_WIDTH}}" height="{{HERO_HEIGHT}}" style="object-position:{{HERO_POSITION}}" fetchpriority="high">
+        <span class="photo-credit">AT HOME WITH LUX & LEO</span>
+      </div>
+      <div class="hero-inner wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">OUR LITTLE CORNER OF THE WORLD</p>
+          <h1 id="hero-heading">Life with <br><em>Lux & Leo.</em></h1>
+          <p class="hero-description">Two Ragdoll brothers took over our life.<br>We wouldn't have it any other way.</p>
+          <p class="hero-description hero-secondary">A weekly note on cat parenthood, the things we're learning, and moments we'd like to keep.</p>
+          <a class="button button-moss" href="#diary">Read the latest entry <span aria-hidden="true">↗</span></a>
+          <p class="issue-note">{{ISSUE}}</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section" role="region" aria-roledescription="carousel" aria-labelledby="gallery-heading">
+      <div class="gallery-layout wrap">
+        <div class="gallery-intro">
+          <p class="eyebrow">THE PHOTO DIARY</p>
+          <h2 id="gallery-heading">{{COLLECTION_TITLE}}</h2>
+          <p>{{COLLECTION_DESCRIPTION}}</p>
+          <span class="collection-note">A few moments worth keeping.</span>
+          <div class="collection-links" aria-label="More photo collections">{{COLLECTION_LINKS}}</div>
+        </div>
+        <div class="hero-collection">
+          <div class="carousel-stage" aria-live="off">{{CAROUSEL_CARDS}}</div>
+          <div class="gallery-actions">
+            <div class="carousel-controls" aria-label="Slideshow controls">
+              <button id="carousel-previous" aria-label="Previous featured photo">←</button>
+              <span id="carousel-counter" aria-live="off">1 / {{FEATURED_COUNT}}</span>
+              <button id="carousel-next" aria-label="Next featured photo">→</button>
+              <button id="carousel-toggle" class="carousel-toggle" aria-label="Pause slideshow">Pause</button>
+            </div>
+            <button class="text-button" id="open-gallery">View full photo gallery <span aria-hidden="true">↗</span></button>
+          </div>
+          <p id="carousel-status" class="visually-hidden" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="diary" class="diary-section" aria-labelledby="diary-heading" data-background-photo="{{DIARY_PHOTO_ID}}">
+      <img class="diary-background" src="{{DIARY_PHOTO_SRC}}" alt="" width="{{DIARY_PHOTO_WIDTH}}" height="{{DIARY_PHOTO_HEIGHT}}" style="object-position:{{DIARY_PHOTO_POSITION}}" loading="lazy">
+      <div class="diary-layout wrap">
+      <div class="diary-heading">
+        <p class="eyebrow">A FEW WORDS FROM OUR WEEK</p>
+        <h2 id="diary-heading">The diary.</h2>
+        <p class="section-aside">A small note.</p>
+        <div class="diary-date"><span>No. {{ENTRY_NUMBER}}</span><time datetime="{{ENTRY_DATE}}">{{ENTRY_DATE_LABEL}}</time></div>
+      </div>
+      <article class="diary-letter" aria-labelledby="latest-title">
+        <p class="entry-label">LATEST ENTRY <span aria-hidden="true">/</span> {{ENTRY_CATEGORY}}</p>
+        <h3 id="latest-title">{{ENTRY_TITLE}}</h3>
+        <div class="letter-copy">{{ENTRY_EXCERPT}}</div>
+        <details class="letter-details" id="latest-entry">
+          <summary><span class="when-closed">Read the full entry</span><span class="when-open">Close the entry</span><span aria-hidden="true">↗</span></summary>
+          <div class="letter-copy letter-remainder">{{ENTRY_REMAINDER}}<div class="signature"><span>{{ENTRY_SIGNATURE}}</span><p>{{ENTRY_AUTHOR}}</p></div></div>
+        </details>
+        <div class="diary-bottom"><span>{{ENTRY_COUNT_LABEL}}</span><button class="text-button" id="open-archive">View more from the diary <span aria-hidden="true">↗</span></button></div>
+      </article>
+      </div>
+    </section>
+
+    <section class="cast-strip wrap" aria-labelledby="cast-heading">
+      <h2 id="cast-heading">The two behind<br><em>all of this.</em></h2>
+      <div class="cast-person"><h3>Lux</h3><p>Ball chaser.<br>Affectionate little shadow.</p></div>
+      <div class="cast-person"><h3>Leo</h3><p>Birdwatcher. Acrobat.<br>3 a.m. cuddler.</p></div>
+    </section>
+
+    <section id="links" class="links-section wrap" aria-labelledby="links-heading">
+      <a class="quiet-photo" href="{{FEATURED_REEL}}" target="_blank" rel="noopener noreferrer" aria-label="Watch a quiet window moment on Velveteentails Instagram (opens in a new tab)">
+        <img src="assets/october-watch.webp" alt="A quiet moment watching the trees from the window." width="941" height="1672" loading="lazy">
+        <div class="quiet-photo-copy"><span class="eyebrow">A LITTLE OF OUR EVERYDAY</span><p>Quiet hours.</p><span class="quiet-link">Watch the reel on Instagram <span aria-hidden="true">↗</span></span></div>
+      </a>
+      <div class="links-content">
+        <p class="eyebrow">GOOD THINGS, ALL IN ONE PLACE</p>
+        <h2 id="links-heading">Favourites <em>& little finds.</em></h2>
+        <p class="links-description">The useful things, the much-loved things, and a little more of our everyday.</p>
+        <div class="link-list">{{AFFILIATE_LINKS}}</div>
+        <a class="instagram-link" href="{{INSTAGRAM}}" target="_blank" rel="noopener noreferrer">{{INSTAGRAM_ICON}}<span>Find us on Instagram</span><span aria-hidden="true">↗</span></a>
+        <p class="affiliate-disclosure">{{AFFILIATE_DISCLOSURE}}</p>
+      </div>
+    </section>
+    <section class="memory-strip" aria-labelledby="memory-strip-heading">
+      <div class="memory-strip-heading wrap"><h2 id="memory-strip-heading">A life in little moments.</h2><div class="memory-strip-actions"><button class="text-button" data-open-collection="all">See all photos <span aria-hidden="true">↗</span></button><button id="memory-strip-toggle" class="strip-toggle" aria-label="Pause scrolling photos" aria-pressed="false">Pause <span aria-hidden="true">Ⅱ</span></button></div></div>
+      <div class="memory-strip-viewport" tabindex="0" role="region" aria-label="Photographs from the autumn, summer and kitten collections.">
+        <div class="memory-strip-track">{{MEMORY_STRIP}}</div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-pattern" aria-hidden="true"></div>
+    <div class="footer-inner wrap">
+      <p class="footer-thought">For the people whose pets <em>are their people.</em></p>
+      <div class="footer-bottom"><a class="footer-wordmark" href="#top">velveteentails</a><p>With love, from Lux & Leo.</p><a class="back-top" href="#top">Back to the top <span aria-hidden="true">↑</span></a></div>
+    </div>
+  </footer>
+
+  <dialog id="full-gallery-dialog" class="full-gallery-dialog" aria-labelledby="full-gallery-heading"><div class="full-gallery-inner"><button class="dialog-close gallery-close" aria-label="Close full photo gallery">×</button><p class="eyebrow">THE CAMERA ROLL</p><h2 id="full-gallery-heading">Our photo album.</h2><p class="full-gallery-intro">Small moments with Lux & Leo, collected along the way.</p><div class="gallery-filters" role="group" aria-label="Filter photo collections">{{GALLERY_FILTERS}}</div><div class="gallery-grid">{{GALLERY}}</div><p class="gallery-note"><span id="gallery-count" role="status">{{PHOTO_COUNT}} photographs to linger over.</span><span>Tap any photo to take a closer look.</span></p></div></dialog>
+  <dialog id="photo-dialog" class="photo-dialog" aria-label="Photo gallery viewer"><div class="photo-dialog-inner"><button class="dialog-close photo-close" aria-label="Close photo viewer">×</button><figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure><div class="photo-controls"><button id="previous-photo" aria-label="Previous photo">←</button><span id="photo-counter" aria-live="polite"></span><button id="next-photo" aria-label="Next photo">→</button></div></div></dialog>
+  <dialog id="archive-dialog" class="archive-dialog" aria-labelledby="archive-heading"><div class="archive-inner"><button class="dialog-close archive-close" aria-label="Close diary archive">×</button><p class="eyebrow">ONE LITTLE WEEK AT A TIME</p><h2 id="archive-heading">The diary shelf.</h2><p class="archive-intro">A place to keep the weeks we don't want to forget.</p><div class="archive-list">{{ARCHIVE}}</div><p class="archive-note">{{ARCHIVE_NOTE}}</p></div></dialog>
+  <div id="status-message" class="status-message" role="status" aria-live="polite"></div>
+  <script type="application/json" id="site-data">{{RUNTIME_DATA}}</script>
+</body>
+</html>
