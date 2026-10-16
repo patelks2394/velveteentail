@@ -40,6 +40,7 @@
       </nav>
     </div>
   </header>
+  <div class="footer-pattern header-pattern" aria-hidden="true"></div>
   <main id="main">
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-media">
@@ -111,6 +112,7 @@
         <p class="entry-label">LATEST ENTRY <span aria-hidden="true">/</span> {{ENTRY_CATEGORY}}</p>
         <h3 id="latest-title">{{ENTRY_TITLE}}</h3>
         <div class="letter-copy">{{ENTRY_EXCERPT}}</div>
+        {{ENTRY_REEL_LINKS}}
         <details class="letter-details" id="latest-entry">
           <summary><span class="when-closed">Read the full entry</span><span class="when-open">Close the entry</span><span aria-hidden="true">↗</span></summary>
           <div class="letter-copy letter-remainder">{{ENTRY_REMAINDER}}<div class="signature"><span>{{ENTRY_SIGNATURE}}</span><p>{{ENTRY_AUTHOR}}</p></div></div>

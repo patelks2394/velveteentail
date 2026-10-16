@@ -3,7 +3,7 @@
   "title": "Velveteentails — Life with Lux & Leo",
   "description": "A little weekly diary of life with two Ragdoll brothers. Honest notes on cat parenthood, photographs worth keeping, and our favourite finds.",
   "instagram": "https://www.instagram.com/velveteentails/",
-  "issue": "No. 01 · October 2026",
+  "issue": "No. 02 · October 2026",
   "featuredCollection": {
     "title": "Autumn days with Lux & Leo.",
     "photoIds": [
@@ -34,6 +34,32 @@
       "signature": "With love,",
       "author": "Lux & Leo's catmom",
       "backgroundPhotoId": "kitten-story-time"
+    },
+    {
+      "id": "finger-brushes-two-opinions",
+      "number": "02",
+      "date": "2026-10-16",
+      "category": "A new little routine",
+      "title": "Finger brushes, two Ragdolls, and a little practice.",
+      "paragraphs": [
+        "At the vet, I learned their teeth could use a little more cleaning and their gums a gentle massage. We came home with finger brushes and the zinc and vitamin C gel we were recommended, ready to start a new routine.",
+        "Lux went first. I thought I was prepared, but we were both still figuring out the finger brush. It was not quite like the calm little demonstrations online. I was trying to be careful; Lux was trying to understand why there was a toothbrush on my finger.",
+        "I hoped Leo might find it a little easier. After all, his brother had already shown us how the first attempt could go. Leo had some feedback of his own, and he made sure I heard it. I owe Lux an apology: he was the cooperative one.",
+        "We're still learning how to make cat toothbrushing part of our routine, one small try at a time. No sudden breakthrough, just two Ragdoll brothers with opinions and a catmom learning alongside them.",
+        "If brushing your cat's teeth looks a little less serene than the demonstrations, you're in good company. We're figuring it out too."
+      ],
+      "signature": "With love,",
+      "author": "Lux & Leo's catmom",
+      "reelLinks": [
+        {
+          "label": "Lux's first try with the finger brush",
+          "url": "https://www.instagram.com/velveteentails/reel/Def1Y3ByK9X/"
+        },
+        {
+          "label": "Leo's turn with the finger brush",
+          "url": "https://www.instagram.com/velveteentails/reel/Deh9bWJy9B6/"
+        }
+      ]
     }
   ],
   "photos": [
