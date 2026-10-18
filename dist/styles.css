@@ -37,6 +37,26 @@ dialog{padding:0;border:0;color:var(--ink);max-width:calc(100% - 32px);max-heigh
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.quiet-photo:hover>img{transform:none}}
 @media print{.site-header,.hero,.gallery-section,.cast-strip,.links-section,.site-footer,.diary-bottom,.diary-date,dialog,.letter-details summary{display:none}.diary-section{display:block;border:0;width:100%;padding:0}.diary-heading{margin-bottom:25px}.diary-letter{padding:0}.letter-details::details-content{content-visibility:visible}.letter-remainder{display:block}}
 
+/* Brand reels and the seasonal link in Favourites & little finds. */
+.autumn-intro .quiet-photo-copy .eyebrow{max-width:290px;line-height:1.7}
+.autumn-intro .quiet-photo-copy p{font-size:37px;max-width:340px}
+.brand-reels{margin-top:25px;padding-top:18px;border-top:1px solid var(--line)}
+.brand-reels>.eyebrow{font-size:8px;letter-spacing:1.45px}
+.brand-reels h3{font:25px/1.2 var(--serif);letter-spacing:-.2px;margin-top:7px}
+.brand-reel-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.brand-reel-card{display:grid;grid-template-columns:72px minmax(0,1fr);gap:11px;align-items:center;padding:9px;background:#f5f2ec;color:inherit;text-decoration:none;min-width:0;transition:background .2s}
+.brand-reel-card:hover{background:#efebe2}
+.brand-reel-card>img{display:block;width:72px;height:128px;object-fit:cover}
+.brand-reel-copy{display:flex;min-width:0;flex-direction:column;align-items:flex-start}
+.brand-reel-copy>small{font-size:7px;letter-spacing:1px;color:#6f715f}
+.brand-reel-copy>strong{font:21px/1.1 var(--serif);margin-top:6px;overflow-wrap:anywhere}
+.brand-reel-copy>span:not(.brand-reel-watch){font-size:9px;line-height:1.6;color:var(--body);margin-top:6px}
+.brand-reel-watch{display:flex;align-items:center;gap:6px;border-top:1px solid var(--line);width:100%;padding-top:7px;margin-top:9px;font-size:8px;color:#5f684f}
+.brand-reel-watch b{font-size:14px;font-weight:400;margin-left:auto}
+@media(max-width:800px){.brand-reel-grid{gap:9px}.brand-reel-card{grid-template-columns:62px minmax(0,1fr);gap:8px;padding:7px}.brand-reel-card>img{width:62px;height:110px}.brand-reel-copy>strong{font-size:18px}.brand-reel-copy>span:not(.brand-reel-watch){font-size:8px}.brand-reel-watch{font-size:7px}}
+@media(max-width:600px){.autumn-intro .quiet-photo-copy p{font-size:34px;max-width:290px}.brand-reel-card{grid-template-columns:70px minmax(0,1fr);gap:10px;padding:8px}.brand-reel-card>img{width:70px;height:124px}.brand-reel-copy>strong{font-size:20px}.brand-reel-copy>span:not(.brand-reel-watch){font-size:9px}.brand-reel-watch{font-size:8px}}
+@media(max-width:360px){.brand-reel-grid{grid-template-columns:1fr}.brand-reel-card{grid-template-columns:72px minmax(0,1fr)}.brand-reel-card>img{width:72px;height:128px}}
+
 /* Collections live in the album, keeping the main page small. */
 .collection-links{display:grid;gap:4px;margin-top:18px;max-width:275px}.collection-link{display:flex;align-items:center;gap:10px;text-align:left;background:none;border-bottom:1px solid var(--line);padding:9px 0;color:var(--moss)}.collection-link>span:first-child{font:italic 18px/1.4 var(--serif)}.collection-link small{margin-left:auto;font:8px var(--sans);color:var(--muted);white-space:nowrap}.collection-link>span:last-child{font-size:19px}.collection-link:hover{border-color:var(--moss)}
 .gallery-filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px;padding-bottom:18px;border-bottom:1px solid var(--line)}.gallery-filter{display:flex;align-items:center;gap:9px;padding:10px 13px;min-height:40px;font-size:11px;background:#f0ece4;color:#585443}.gallery-filter span{font-size:9px}.gallery-filter[aria-pressed="true"]{background:var(--moss);color:#fffdf7}.gallery-filter:hover{box-shadow:inset 0 0 0 1px var(--moss)}.gallery-photo[hidden]{display:none}

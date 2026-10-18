@@ -31,6 +31,16 @@ for (const photo of content.photos) {
  assert(photo.alt?.trim() && photo.caption?.trim(), `Missing photo description: ${photo.id}`);
  assert(photo.width > 0 && photo.height > 0, `Invalid image dimensions: ${photo.id}`);
 }
+assert.equal(content.featuredCollection.id, 'autumn', 'The featured carousel should belong to the Autumn collection');
+for (const photoId of content.featuredCollection.photoIds) assert.equal(content.photos.find(photo => photo.id === photoId)?.collection, 'autumn', `Featured photo is not in Autumn: ${photoId}`);
+assert.equal(content.featuredCollection.photoIds.length, 11, 'The autumn walk carousel should feature all eleven new photos');
+assert.equal(content.brandReels?.length, 2, 'Expected Optimeal and PettiChat brand reels');
+for (const reel of content.brandReels) {
+ requireAsset(reel.image);
+ assert(/^https:\/\/www\.instagram\.com\/reel\//.test(reel.url), `Invalid brand Reel URL: ${reel.brand}`);
+ assert(html.includes(reel.url) && html.includes(reel.brand), `Missing brand Reel card: ${reel.brand}`);
+}
+assert(html.includes(content.autumnIntroReel.url.replaceAll('&', '&amp;')) && html.includes('It was time to show them fall.'), 'The seasonal Reel link and introduction are missing');
 assert.equal(new Set(content.entries.map(entry => entry.id)).size, content.entries.length, 'Duplicate diary entry IDs');
 for (const entry of content.entries) {
  assert(/^\d{4}-\d{2}-\d{2}$/.test(entry.date) && !Number.isNaN(Date.parse(entry.date)), `Invalid date: ${entry.id}`);

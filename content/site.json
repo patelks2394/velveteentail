@@ -5,16 +5,22 @@
   "instagram": "https://www.instagram.com/velveteentails/",
   "issue": "No. 02 · October 2026",
   "featuredCollection": {
-    "title": "Autumn days with Lux & Leo.",
+    "title": "Our autumn walk with Lux & Leo.",
     "photoIds": [
-      "window-companions",
-      "upside-down",
-      "little-loaf",
-      "october-watch",
-      "desk-company"
+      "autumn-walk-01",
+      "autumn-walk-02",
+      "autumn-walk-03",
+      "autumn-walk-04",
+      "autumn-walk-05",
+      "autumn-walk-06",
+      "autumn-walk-07",
+      "autumn-walk-08",
+      "autumn-walk-09",
+      "autumn-walk-10",
+      "autumn-walk-11"
     ],
     "id": "autumn",
-    "description": "Window seats, little loafs, and a very important watch over the trees outside."
+    "description": "Golden leaves, stroller rides, and two little homebodies out seeing fall."
   },
   "entries": [
     {
@@ -64,6 +70,127 @@
     }
   ],
   "photos": [
+    {
+      "id": "autumn-walk-01",
+      "collection": "autumn",
+      "src": "assets/autumn-walk-01.webp",
+      "thumbnail": "assets/autumn-walk-01-thumb.webp",
+      "caption": "The leaves were already putting on a show.",
+      "alt": "A Ragdoll peeking out from a pet stroller during a walk under golden autumn leaves.",
+      "position": "50% 50%",
+      "width": 1229,
+      "height": 1536
+    },
+    {
+      "id": "autumn-walk-02",
+      "collection": "autumn",
+      "src": "assets/autumn-walk-02.webp",
+      "thumbnail": "assets/autumn-walk-02-thumb.webp",
+      "caption": "A little peek between the folds.",
+      "alt": "A fluffy Ragdoll riding in a pet stroller on a sunny autumn walk, looking toward the camera.",
+      "position": "50% 50%",
+      "width": 1229,
+      "height": 1536
+    },
+    {
+      "id": "autumn-walk-03",
+      "collection": "autumn",
+      "src": "assets/autumn-walk-03.webp",
+      "thumbnail": "assets/autumn-walk-03-thumb.webp",
+      "caption": "Both brothers, taking in the colours.",
+      "alt": "Two Ragdoll cats tucked into their stroller as they look around at the fall trees.",
+      "position": "50% 50%",
+      "width": 1229,
+      "height": 1536
+    },
+    {
+      "id": "autumn-walk-04",
+      "collection": "autumn",
+      "src": "assets/autumn-walk-04.webp",
+      "thumbnail": "assets/autumn-walk-04-thumb.webp",
+      "caption": "Out of the stroller, but not quite.",
+      "alt": "A Ragdoll sitting upright in the open stroller, surrounded by golden autumn leaves.",
+      "position": "50% 50%",
+      "width": 1229,
+      "height": 1536
+    },
+    {
+      "id": "autumn-walk-05",
+      "collection": "autumn",
+      "src": "assets/autumn-walk-05.webp",
+      "thumbnail": "assets/autumn-walk-05-thumb.webp",
+      "caption": "The canopy overhead was all gold.",
+      "alt": "A Ragdoll sitting in a stroller and gazing up at a tree full of golden leaves.",
+      "position": "50% 50%",
+      "width": 1229,
+      "height": 1536
+    },
+    {
+      "id": "autumn-walk-06",
+      "collection": "autumn",
+      "src": "assets/autumn-walk-06.webp",
+      "thumbnail": "assets/autumn-walk-06-thumb.webp",
+      "caption": "A quiet ride along the path.",
+      "alt": "The two Ragdoll brothers sitting together in their stroller on a tree-lined sidewalk.",
+      "position": "50% 50%",
+      "width": 1229,
+      "height": 1536
+    },
+    {
+      "id": "autumn-walk-07",
+      "collection": "autumn",
+      "src": "assets/autumn-walk-07.webp",
+      "thumbnail": "assets/autumn-walk-07-thumb.webp",
+      "caption": "A soft pause on our autumn walk.",
+      "alt": "A close-up of a fluffy Ragdoll resting with eyes closed on the soft stroller edge.",
+      "position": "50% 50%",
+      "width": 1229,
+      "height": 1536
+    },
+    {
+      "id": "autumn-walk-08",
+      "collection": "autumn",
+      "src": "assets/autumn-walk-08.webp",
+      "thumbnail": "assets/autumn-walk-08-thumb.webp",
+      "caption": "Two little homebodies, out exploring.",
+      "alt": "Two Ragdoll cats nestled in their stroller, with colorful harnesses and fall trees behind them.",
+      "position": "50% 50%",
+      "width": 1229,
+      "height": 1536
+    },
+    {
+      "id": "autumn-walk-09",
+      "collection": "autumn",
+      "src": "assets/autumn-walk-09.webp",
+      "thumbnail": "assets/autumn-walk-09-thumb.webp",
+      "caption": "Somewhere between curiosity and a nap.",
+      "alt": "A blue-eyed Ragdoll looking toward the changing leaves.",
+      "position": "50% 50%",
+      "width": 1229,
+      "height": 1536
+    },
+    {
+      "id": "autumn-walk-10",
+      "collection": "autumn",
+      "src": "assets/autumn-walk-10.webp",
+      "thumbnail": "assets/autumn-walk-10-thumb.webp",
+      "caption": "Looking up at the last of the sunshine.",
+      "alt": "A Ragdoll looking up from the stroller as another cat sits behind him.",
+      "position": "50% 50%",
+      "width": 1229,
+      "height": 1536
+    },
+    {
+      "id": "autumn-walk-11",
+      "collection": "autumn",
+      "src": "assets/autumn-walk-11.webp",
+      "thumbnail": "assets/autumn-walk-11-thumb.webp",
+      "caption": "A cosy little seat for our leaf-watchers.",
+      "alt": "A blue-eyed Ragdoll tucked inside the stroller, with his brother in the foreground.",
+      "position": "50% 50%",
+      "width": 1229,
+      "height": 1536
+    },
     {
       "id": "window-companions",
       "src": "assets/window-companions.webp",
@@ -397,5 +524,27 @@
       "description": "Tiny paws, first adventures, and the beginning of everything."
     }
   ],
-  "heroPosition": "50% 12%"
+  "heroPosition": "50% 12%",
+  "autumnIntroReel": {
+    "url": "https://www.instagram.com/reel/DcsCVjaNq8R/?cplk=dHhiN2pxaDVtd3o4",
+    "label": "Our homebodies asked to see summer",
+    "publishedDate": "2026-08-30",
+    "caption": "It was time to show them fall."
+  },
+  "brandReels": [
+    {
+      "brand": "Optimeal",
+      "title": "Dinner becomes the reset.",
+      "url": "https://www.instagram.com/reel/DbYVHc5SNQz/?psln=aHdkbHVqcXRpcjFo",
+      "image": "assets/brand-optimeal-reel.webp",
+      "alt": "Optimeal Reel cover: a Ragdoll eating dinner from a bowl, with “when dinner becomes the reset” on screen."
+    },
+    {
+      "brand": "PettiChat",
+      "title": "What my cat has been saying.",
+      "url": "https://www.instagram.com/reel/DcUyOdky3lO/?cplk=MWFtcHJmMWJqZGF1cg==",
+      "image": "assets/brand-pettichat-reel.webp",
+      "alt": "PettiChat Reel cover: Leo looking to the side, with “what my cat has been saying…” on screen."
+    }
+  ]
 }
